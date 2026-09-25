@@ -1,14 +1,14 @@
 # Chatbot for Internship Support
 
-## Objective
+Objective
 Develop an AI chatbot to answer intern queries and provide support,
 automating real-time responses based on FAQ content.
 
-## Dataset
+Dataset
 15 FAQ question-answer pairs covering common internship queries: duration,
 task submission, tools needed, certificates, support contact, deadlines, etc.
 
-## Approach
+Approach
 1. **TF-IDF Vectorization** — converted all known FAQ questions into numeric
    vectors (same technique used in the Sentiment Analysis and Skill Gap
    Analysis tasks).
@@ -30,7 +30,7 @@ Tested on 4 sample queries:
 | "Will I get paid for this?" | 0.76 | Correctly matched: compensation info |
 | "What's the weather like today?" | 0.00 | Correctly triggered fallback (unrelated query) |
 
-## Limitation (honest note)
+Limitation 
 The second query — "Where do I send my finished project?" — should have
 matched the FAQ about submitting work, but got 0.00 confidence and
 triggered the fallback instead. This happened because TF-IDF only matches
